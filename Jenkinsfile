@@ -10,7 +10,8 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/chayakruthi/springdemo.git'
+                git branch: 'main',
+                    url: 'https://github.com/chayakruthi/springdemo.git'
             }
         }
 
